@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".a").click(function(){
+    $(".a").replaceWith("Para 01")
+    $(".b").click(function(){
+    $(".b").replaceWith("Para 02")
+    $(".c").click(function(){
+    $(".c").replaceWith("Para 03")
+  });
+});
+});
+});
+</script>
+</head>
+<body>
+<div class="a" style="border: 250px;background-color: red;width: 200px; height: 200px;">
+    <b>Box 01</b>
+</div>
+<br>
+<div class="b" style="border: 250px;background-color: green;width: 200px; height: 200px;">
+    <b>Box 02</b>
+</div>
+<br>
+<div class="c" style="border: 250px;background-color: blue;width: 200px; height: 200px;">
+    <b>Box 03</b>
+</div>
+<br>
+
+</body>
+</html>

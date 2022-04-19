@@ -1,1 +1,2 @@
-    return 0;
+    // change array value
+    marks[1] = 44;

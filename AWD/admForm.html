@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    </style>
+
+    <script>
+        type="text/javascript">
+        function CopyToLabel() {
+            //Reference the TextBox.
+            var txtName = document.getElementById("txtName");
+            //Reference the Label.
+            var lblName = document.getElementById("lblName");
+            //Copy the TextBox value to Label.
+            lblName.innerHTML = txtName.value;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="admHead">
+        <h1>Admission Form</h1>
+    </div>
+
+    <div class="admForm">
+        <form>
+            <label for="fname">Full Name: </label>
+            <input type="text" id="fname">
+            <br><br>
+            <label for="age">Age: </label>
+            <select>
+                <option disabled selected>Select</option>
+                <option>18 Below</option>
+                <option>18 & Above</option>
+            </select>
+            <br><br>
+            <label for="gender">Gender: </label>
+            <input type="radio" id="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="gender">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="pnum">Phone Number: </label>
+            <input type="number" id="fnum">
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+            <br><br>
+            <label for="course">Course</label>
+            <select>
+                <option disabled selected>Select</option>
+                <option>CSE</option>
+                <option>IT</option>
+                <option>Mechenical</option>
+                <option>Electronics</option>
+                <option>Electrical</option>
+            </select>
+            <br><br>
+            <label for="addr">Address: </label>
+            <textarea></textarea>
+            <br><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>

@@ -1,0 +1,18 @@
+<html>
+<body>
+<input type="text" id="txtName"/>
+<input type="button" id = "btnCopy" value="Copy To Label" onclick = "CopyToLabel()" />
+<hr/>
+<label id = "lblName"></label>
+<script type="text/javascript">
+    function CopyToLabel() {
+        //Reference the TextBox.
+        var txtName = document.getElementById("txtName");
+        //Reference the Label.
+        var lblName = document.getElementById("lblName");
+        //Copy the TextBox value to Label.
+        lblName.innerHTML = txtName.value;
+    }
+</script>
+</body>
+</html>
